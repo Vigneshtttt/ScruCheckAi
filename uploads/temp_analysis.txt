@@ -1,0 +1,85 @@
+### Analysis Report
+
+#### 1. Comparison with Previous Year Paper
+
+| Question | Similarity | Reference |
+|----------|------------|-----------|
+| Define Type I error and Type II error in testing of hypothesis. | Repeated | Previous Year Paper, Question 1 |
+| State the uses of Chi-square test. | New | - |
+| Define the terms experimental and extraneous variables in design of experiments. | New | - |
+| Complete the following ANOVA table | New | - |
+| What is need for pivoting in Gauss elimination method? | New | - |
+| State the advantage of Gauss Seidel method over Gauss Jacobi method | Similar | Previous Year Paper, Question 6 |
+| List the merits and demerits of Lagrange interpolation method. | New | - |
+| Interpret geometrically Trapezoidal rule. | New | - |
+| Why Euler method is known as point-slope method? | New | - |
+| Give an example for single step and multi-step method for solving ordinary differential equations. | New | - |
+
+#### 2. Syllabus Coverage Mapping
+
+- **Question 1**: Define Type I error and Type II error in testing of hypothesis. → Unit 1: Testing of Hypothesis
+- **Question 2**: State the uses of Chi-square test. → Unit 1: Testing of Hypothesis
+- **Question 3**: Define the terms experimental and extraneous variables in design of experiments. → Unit 2: Design of Experiments
+- **Question 4**: Complete the following ANOVA table → Unit 2: Design of Experiments
+- **Question 5**: What is need for pivoting in Gauss elimination method? → Unit 3: Solution of Equations and Eigenvalue Problems
+- **Question 6**: State the advantage of Gauss Seidel method over Gauss Jacobi method → Unit 3: Solution of Equations and Eigenvalue Problems
+- **Question 7**: List the merits and demerits of Lagrange interpolation method. → Unit 4: Interpolation, Numerical Differentiation, and Numerical Integration
+- **Question 8**: Interpret geometrically Trapezoidal rule. → Unit 4: Interpolation, Numerical Differentiation, and Numerical Integration
+- **Question 9**: Why Euler method is known as point-slope method? → Unit 5: Numerical Solution of Ordinary Differential Equations
+- **Question 10**: Give an example for single step and multi-step method for solving ordinary differential equations. → Unit 5: Numerical Solution of Ordinary Differential Equations
+
+#### 3. Question Analysis
+
+| Question | Bloom's Level | Difficulty | Clarity |
+|----------|---------------|------------|---------|
+| 1 | Remember | Easy | Clear |
+| 2 | Understand | Easy | Clear |
+| 3 | Remember | Easy | Clear |
+| 4 | Apply | Medium | Clear |
+| 5 | Understand | Medium | Clear |
+| 6 | Understand | Medium | Clear |
+| 7 | Understand | Medium | Clear |
+| 8 | Understand | Medium | Clear |
+| 9 | Understand | Medium | Clear |
+| 10 | Understand | Medium | Clear |
+
+#### 4. Statistical Summary
+
+- **Bloom's Distribution**:
+  - Remember: 30%
+  - Understand: 60%
+  - Apply: 10%
+  - Analyze: 0%
+  - Evaluate: 0%
+  - Create: 0%
+
+- **Difficulty Distribution**:
+  - Easy: 30%
+  - Medium: 70%
+  - Hard: 0%
+
+- **Clarity Distribution**:
+  - Clear: 100%
+  - Somewhat Clear: 0%
+  - Ambiguous: 0%
+
+- **Repetition Rate**: 20%
+- **Syllabus Coverage**:
+  - Unit 1: 20%
+  - Unit 2: 20%
+  - Unit 3: 20%
+  - Unit 4: 20%
+  - Unit 5: 20%
+
+- **Knowledge Gaps**: None identified
+
+#### 5. Recommendations
+
+1. **Balance Bloom Levels**: Increase the proportion of higher-order thinking questions (Analyze, Evaluate, Create).
+2. **Improve Clarity**: Maintain the current clarity level as all questions are clear.
+3. **Reduce Repetition**: Minimize repeated questions to encourage a broader understanding of the subject.
+4. **Cover All Syllabus Units**: Ensure all units are covered evenly to provide a comprehensive assessment.
+
+---
+
+This report provides a detailed analysis of the sample question paper, comparing it with the previous year's paper, mapping questions to the syllabus, and offering recommendations for improvement.
