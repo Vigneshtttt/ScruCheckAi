@@ -1,85 +1,71 @@
-### Analysis Report
+### Report
 
-#### 1. Comparison with Previous Year Paper
+#### 1. Format Compliance
+- ✅ Result: YES
+- Reason: The sample question paper follows the required structure with Part A (10x2=20 marks) and Part B (5x16=80 marks). The numbering and section labels are properly formatted.
 
-| Question | Similarity | Reference |
-|----------|------------|-----------|
-| Define Type I error and Type II error in testing of hypothesis. | Repeated | Previous Year Paper, Question 1 |
-| State the uses of Chi-square test. | New | - |
-| Define the terms experimental and extraneous variables in design of experiments. | New | - |
-| Complete the following ANOVA table | New | - |
-| What is need for pivoting in Gauss elimination method? | New | - |
-| State the advantage of Gauss Seidel method over Gauss Jacobi method | Similar | Previous Year Paper, Question 6 |
-| List the merits and demerits of Lagrange interpolation method. | New | - |
-| Interpret geometrically Trapezoidal rule. | New | - |
-| Why Euler method is known as point-slope method? | New | - |
-| Give an example for single step and multi-step method for solving ordinary differential equations. | New | - |
+#### 2. Regulation & Course Check
+- ✅ Result: YES
+- Reason: The sample question paper is aligned with the correct regulation (Regulations 2023), semester (First Semester), and course code (PH2311) as per the syllabus.
 
-#### 2. Syllabus Coverage Mapping
+#### 3. Syllabus Alignment
+- ✅ Result: YES
+- Reason: All questions in the sample question paper are within the syllabus scope.
+- Out-of-syllabus Questions: None
 
-- **Question 1**: Define Type I error and Type II error in testing of hypothesis. → Unit 1: Testing of Hypothesis
-- **Question 2**: State the uses of Chi-square test. → Unit 1: Testing of Hypothesis
-- **Question 3**: Define the terms experimental and extraneous variables in design of experiments. → Unit 2: Design of Experiments
-- **Question 4**: Complete the following ANOVA table → Unit 2: Design of Experiments
-- **Question 5**: What is need for pivoting in Gauss elimination method? → Unit 3: Solution of Equations and Eigenvalue Problems
-- **Question 6**: State the advantage of Gauss Seidel method over Gauss Jacobi method → Unit 3: Solution of Equations and Eigenvalue Problems
-- **Question 7**: List the merits and demerits of Lagrange interpolation method. → Unit 4: Interpolation, Numerical Differentiation, and Numerical Integration
-- **Question 8**: Interpret geometrically Trapezoidal rule. → Unit 4: Interpolation, Numerical Differentiation, and Numerical Integration
-- **Question 9**: Why Euler method is known as point-slope method? → Unit 5: Numerical Solution of Ordinary Differential Equations
-- **Question 10**: Give an example for single step and multi-step method for solving ordinary differential equations. → Unit 5: Numerical Solution of Ordinary Differential Equations
+#### 4. Bloom’s Taxonomy & COs
+- Result: ✅ YES
+- Reason: The questions cover various cognitive levels as per Bloom's Taxonomy.
 
-#### 3. Question Analysis
+| Question No | Bloom Level |
+|-------------|-------------|
+| Q1 | Understand |
+| Q2 | Apply |
+| Q3 | Understand |
+| Q4 | Remember |
+| Q5 | Remember |
+| Q6 | Apply |
+| Q7 | Remember |
+| Q8 | Understand |
+| Q9 | Remember |
+| Q10 | Understand |
+| Q11(a) | Analyze |
+| Q11(b) | Apply |
+| Q12(a) | Understand |
+| Q12(b) | Apply |
+| Q13(a) | Understand |
+| Q13(b) | Apply |
+| Q14(a) | Apply |
+| Q14(b) | Apply |
+| Q15(a) | Apply |
+| Q15(b) | Understand |
 
-| Question | Bloom's Level | Difficulty | Clarity |
-|----------|---------------|------------|---------|
-| 1 | Remember | Easy | Clear |
-| 2 | Understand | Easy | Clear |
-| 3 | Remember | Easy | Clear |
-| 4 | Apply | Medium | Clear |
-| 5 | Understand | Medium | Clear |
-| 6 | Understand | Medium | Clear |
-| 7 | Understand | Medium | Clear |
-| 8 | Understand | Medium | Clear |
-| 9 | Understand | Medium | Clear |
-| 10 | Understand | Medium | Clear |
+#### 5. Mark Distribution & Time
+- ✅ Result: YES
+- Reason: The marks are fairly distributed across different difficulty levels and time requirements. Each question in Part A is worth 2 marks, and each question in Part B is worth 16 marks, which is balanced.
 
-#### 4. Statistical Summary
+#### 6. Grammar & Clarity
+- ✅ Result: YES
+- Notable Issues: None
 
-- **Bloom's Distribution**:
-  - Remember: 30%
-  - Understand: 60%
-  - Apply: 10%
-  - Analyze: 0%
-  - Evaluate: 0%
-  - Create: 0%
+#### 7. Diagrams/Symbols
+- ✅ Result: YES
+- Comments: No diagrams or symbols are used in the sample question paper, so this criterion is not applicable.
 
-- **Difficulty Distribution**:
-  - Easy: 30%
-  - Medium: 70%
-  - Hard: 0%
+#### 8. Permitted Aids
+- ✅ Result: YES
+- Reason: The sample question paper does not mention any specific permitted aids, so it is assumed to be in line with what is allowed.
 
-- **Clarity Distribution**:
-  - Clear: 100%
-  - Somewhat Clear: 0%
-  - Ambiguous: 0%
+#### 9. Repetition Check
+- Inter-paper Result: No repetition found between the sample question paper and the previous year question paper.
+- Inter-paper Repeated Questions: None
+- Intra-paper Result: No repetition found within the sample question paper.
+- Intra-paper Repeated Questions: None
 
-- **Repetition Rate**: 20%
-- **Syllabus Coverage**:
-  - Unit 1: 20%
-  - Unit 2: 20%
-  - Unit 3: 20%
-  - Unit 4: 20%
-  - Unit 5: 20%
-
-- **Knowledge Gaps**: None identified
-
-#### 5. Recommendations
-
-1. **Balance Bloom Levels**: Increase the proportion of higher-order thinking questions (Analyze, Evaluate, Create).
-2. **Improve Clarity**: Maintain the current clarity level as all questions are clear.
-3. **Reduce Repetition**: Minimize repeated questions to encourage a broader understanding of the subject.
-4. **Cover All Syllabus Units**: Ensure all units are covered evenly to provide a comprehensive assessment.
+#### 10. Figure Naming Clarity
+- ✅ Result: YES
+- Issues: None
 
 ---
 
-This report provides a detailed analysis of the sample question paper, comparing it with the previous year's paper, mapping questions to the syllabus, and offering recommendations for improvement.
+This report is based strictly on the evidence from the provided sample question paper, previous year question paper, and syllabus.

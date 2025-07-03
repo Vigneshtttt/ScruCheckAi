@@ -111,74 +111,94 @@ def analyze_sample(sample_text, prev_text, syllabus_text):
         "Content-Type": "application/json"
     }
     prompt = f"""
-[SYSTEM] You are an advanced educational AI assistant specializing in exam paper analysis.
+You are an academic scrutiny AI designed to evaluate university exam question papers according to standardized criteria. Given the SAMPLE QUESTION PAPER, PREVIOUS QUESTION PAPER, and SYLLABUS, perform an in-depth analysis and provide a structured Markdown report based on the 10 scrutiny criteria below.
 
-Please analyze the SAMPLE question paper by performing the following:
+### 🎯 Scrutiny Criteria
 
-1. **Compare** it with the PREVIOUS YEAR paper to identify any repeated or similar questions.
-2. **Map each question** to the appropriate **topic or unit in the SYLLABUS**.
-3. For each question, identify:
-   - **Bloom's taxonomy level** (Remember, Understand, Apply, Analyze, Evaluate, Create)
-   - **Difficulty level** (Easy, Medium, Hard)
-   - **Clarity** (Clear, Somewhat Clear, Ambiguous)
-
-4. Generate a final **report** with these sections using Markdown:
-
-### 1. Comparison with Previous Year Paper
-(List repeated questions with references)
-
-### 2. Syllabus Coverage Mapping
-(Bullet list: Question → Syllabus Unit)
-
-### 3. Question Analysis
-
-| Question | Bloom's Level | Difficulty | Clarity |
-|----------|---------------|------------|---------|
-| ...      | ...           | ...        | ...     |
-
-### 4. Statistical Summary
-
-- **Bloom's Distribution**:
-  - Remember: X%
-  - Understand: Y%
-  ...
-
-- **Difficulty Distribution**:
-  - Easy: X%
-  ...
-
-- **Clarity Distribution**:
-  - Clear: X%
-
-- **Repetition Rate**: X%
-- **Syllabus Coverage**: 
-  - Unit 1: Y%
-  ...
-
-- **Knowledge Gaps**: (Uncovered syllabus units)
-
-### 5. Recommendations
-
-1. Balance Bloom levels
-2. Improve clarity
-3. Reduce repetition
-4. Cover all syllabus units
+1. **Format compliance**: Does the paper follow the required structure? (Part A: 10×2=20, Part B: 5×16=80 marks, proper numbering, section labels)
+2. **Regulation & course compliance**: Is the paper aligned with the correct regulation, semester, and course code as per the syllabus?(the question paper should have all these details)
+3. **Syllabus alignment**: Are all questions within syllabus scope? Identify any out-of-syllabus content.
+4. **Bloom’s Taxonomy classification**: Classify each question's cognitive level (Remember, Understand, Apply, Analyze, Evaluate, Create).
+5. **Mark distribution & time balance**: Are marks fairly distributed across difficulty and time? Flag overly lengthy or light questions.
+6. **Grammar and clarity check**: Are all questions grammatically correct and unambiguous?
+7. **Use of diagrams/symbols**: Are diagrams or equations used appropriately, and are they necessary?
+8. **Permitted aids check**: Are references to calculators, tables, or handbooks in line with what is allowed?
+9. **Repetition check**: Are any questions repeated from the previous paper? Highlight them.
+10. **Figure naming clarity**: Are figures correctly labeled (e.g., Fig.1(a)) and referenced properly?
 
 ---
 
-IMPORTANT: 
-- Use ONLY if actual question content is present
-- Skip sections if data is insufficient
-- Maintain Markdown compatibility
+### 📄 Report Format (in Markdown)
 
-=== SAMPLE PAPER ===
-{sample_text[:10000]}  [Truncated if too long]
+#### 1. Format Compliance  
+- ✅ Result: YES  ❌ Result: NO
+- Reason: ...
 
-=== PREVIOUS PAPER ===
-{prev_text[:10000]}  [Truncated if too long]
+#### 2. Regulation & Course Check  
+- ✅ Result: YES  ❌ Result: NO
+- Reason: ...
 
-=== SYLLABUS ===
-{syllabus_text[:5000]}  [Truncated if too long]
+#### 3. Syllabus Alignment  
+- ✅ Result: YES  ❌ Result: NO
+- Reason: ...  
+- Out-of-syllabus Questions:  
+  - Q13: "Explain XYZ" → Not found in syllabus
+
+#### ✅ 4. Bloom’s Taxonomy & COs  
+- Result: ✅ YES / ❌ NO  
+- Reason: ...   
+| Question No | Bloom Level      |
+|-------------|------------------|
+| Q1          | Remember         |
+| Q2          | Apply            |
+| ...         | ...              |
+
+#### 5. Mark Distribution & Time  
+- ✅ Result: YES  ❌ Result: NO
+- Reason: ...
+
+#### 6. Grammar & Clarity  
+- ✅ Result: YES  ❌ Result: NO
+- Notable Issues:  
+  - Q6: Ambiguous verb usage  
+  - Q10: Missing punctuation
+
+#### 7. Diagrams/Symbols  
+- ✅ Result: YES  ❌ Result: NO
+- Comments: ...
+
+#### 8. Permitted Aids  
+- ✅ Result: YES  ❌ Result: NO
+- Reason: ...
+
+#### 9. Repetition Check  
+- Inter-paper Result: ...
+- Inter-paper Repeated Questions: ...
+- Intra-paper Result: ...
+- Intra-paper Repeated Questions: ...
+
+
+
+#### 10. Figure Naming Clarity  
+- ✅ Result: YES  ❌ Result: NO
+- Issues:  
+  - "Refer to diagram below" → No label
+
+---
+
+Use only the available content. Skip incomplete sections with a warning. Ensure answers are based strictly on evidence from the papers and syllabus.
+
+---
+
+### SAMPLE QUESTION PAPER:
+{sample_text[:10000]}
+
+### PREVIOUS YEAR QUESTION PAPER:
+{prev_text[:10000]}
+
+### SYLLABUS:
+{syllabus_text[:5000]}
+
 """
 
     payload = {
