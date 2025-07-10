@@ -1,0 +1,73 @@
+### Scrutiny Report
+
+#### 1. Format Compliance
+- ✅ Result: YES
+- Reason: The paper follows the required structure with Part A (10x2=20 marks) and Part B (5x16=80 marks). The numbering and section labels are appropriate.
+
+#### 2. Regulation & Course Check
+- ✅ Result: YES
+- Reason: The paper is aligned with the correct regulation (Regulations 2023), semester (First and Second Semester), and course code (GE23 113/GE23211).
+
+#### 3. Syllabus Alignment
+- ✅ Result: YES
+- Reason: All questions are within the syllabus scope.
+- Out-of-syllabus Questions: None
+
+#### 4. Bloom’s Taxonomy & COs
+- Result: ✅ YES
+- Reason: The questions cover various cognitive levels as per Bloom's Taxonomy.
+
+| Question No | Bloom Level |
+|-------------|-------------|
+| Q1 | Remember |
+| Q2 | Apply |
+| Q3 | Remember |
+| Q4 | Remember |
+| Q5 | Understand |
+| Q6 | Understand |
+| Q7 | Remember |
+| Q8 | Apply |
+| Q9 | Understand |
+| Q10 | Understand |
+| Q11 (a) | Apply |
+| Q11 (b) | Understand |
+| Q12 (a) | Understand |
+| Q12 (b) | Understand |
+| Q13 (a) | Understand |
+| Q13 (b) | Understand |
+| Q14 (a) | Analyze |
+| Q14 (b) | Understand |
+| Q15 (a) | Understand |
+| Q15 (b) | Understand |
+| Q16 (a) | Understand |
+| Q16 (b) | Understand |
+
+#### 5. Mark Distribution & Time
+- ✅ Result: YES
+- Reason: The marks are fairly distributed across different difficulty levels and time requirements. Each question seems appropriately weighted.
+
+#### 6. Grammar & Clarity
+- ✅ Result: YES
+- Notable Issues: None
+
+#### 7. Diagrams/Symbols
+- ✅ Result: YES
+- Comments: Diagrams and symbols are used appropriately and are necessary for the questions.
+
+#### 8. Permitted Aids
+- ✅ Result: YES
+- Reason: The paper does not mention any aids, so it is assumed to be in line with permitted aids.
+
+#### 9. Repetition Check
+- Inter-paper Result: No repetition
+- Inter-paper Repeated Questions: None
+- Intra-paper Result: No repetition
+- Intra-paper Repeated Questions: None
+
+#### 10. Figure Naming Clarity
+- ✅ Result: YES
+- Issues: None
+
+---
+
+This report is based strictly on the evidence from the provided papers and syllabus.

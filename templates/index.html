@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Question Paper Analyzer</title>
+    <style>
+    :root {
+        color-scheme: light dark;
+    }
+
+    html[data-theme='dark'] {
+        background-color: #1e1e1e;
+        color: #e2e8f0;
+    }
+
+    body {
+        font-family: "Segoe UI", sans-serif;
+        padding: 2rem;
+        background-color: #f0f4f8; /* from image */
+        color: #1a202c; /* dark text */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    h2, h3 {
+        color: #2b6cb0; /* Blue headings */
+    }
+
+    form {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #cbd5e0;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    input[type="file"] {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    button {
+        padding: 0.5rem 1.5rem;
+        background-color: #3182ce;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+    .result-container {
+        max-width: 900px;
+        background: #e8edf3;
+        padding: 2rem;
+        margin: 2rem auto;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-family: monospace;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    table, th, td {
+        border: 1px solid #a0aec0;
+    }
+
+    th, td {
+        padding: 0.75rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: #dce3eb;
+    }
+
+    .download-form {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    html[data-theme='dark'] body {
+        background-color: #1e1e1e;
+        color: #e2e8f0;
+    }
+
+    html[data-theme='dark'] form {
+        background-color: #2d3748;
+        box-shadow: 0 0 10px #4a5568;
+    }
+
+    html[data-theme='dark'] .result-container {
+        background-color: #2d3748;
+        color: #e2e8f0;
+        border: 1px solid #4a5568;
+    }
+
+    html[data-theme='dark'] table, html[data-theme='dark'] th, html[data-theme='dark'] td {
+        border-color: #4a5568;
+    }
+
+    html[data-theme='dark'] th {
+        background-color: #4a5568;
+    }
+
+    html[data-theme='dark'] button {
+        background-color: #4299e1;
+    }
+
+    .theme-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 999;
+    }
+
+    .theme-toggle svg {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    html:not([data-theme='dark']) .theme-toggle svg {
+        color: #2d3748 !important; /* dark icon on light bg */
+    }
+
+    html[data-theme='dark'] .theme-toggle svg {
+        color: #e2e8f0 !important; /* light icon on dark bg */
+    }
+</style>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const toggleBtn = document.getElementById('themeToggleIcon');
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.removeAttribute('data-theme');
+                localStorage.removeItem('theme');
+                toggleBtn.innerHTML = sunIcon;
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggleBtn.innerHTML = moonIcon;
+            }
+        }
+
+        const sunIcon = `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.354a1 1 0 011 1V7a1 1 0 11-2 0V5.354a1 1 0 011-1zM4.354 11a1 1 0 011-1H7a1 1 0 110 2H5.354a1 1 0 01-1-1zM12 16.646a1 1 0 011-1V17a1 1 0 11-2 0v-1.354a1 1 0 011-1zM16.646 11a1 1 0 011-1h1.646a1 1 0 110 2H17.646a1 1 0 01-1-1zM6.464 6.464a1 1 0 011.414 0l1.172 1.172a1 1 0 01-1.414 1.414L6.464 7.878a1 1 0 010-1.414zM16.95 16.95a1 1 0 00-1.414 0l-1.172 1.172a1 1 0 101.414 1.414l1.172-1.172a1 1 0 000-1.414zM7.878 17.536a1 1 0 010-1.414L9.05 14.95a1 1 0 011.414 1.414l-1.172 1.172a1 1 0 01-1.414 0zM17.536 6.464a1 1 0 00-1.414 0l-1.172 1.172a1 1 0 001.414 1.414l1.172-1.172a1 1 0 000-1.414zM12 9a3 3 0 100 6 3 3 0 000-6z"/></svg>`;
+        const moonIcon = `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M21.752 15.002A9.718 9.718 0 0112.003 22C6.478 22 2 17.523 2 12c0-4.35 2.788-8.064 6.758-9.392a1 1 0 01.91 1.79A7.003 7.003 0 0012.003 20a7.002 7.002 0 006.603-4.661 1 1 0 011.79.91 9.736 9.736 0 01.356 1.753z"/></svg>`;
+
+        window.onload = function () {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const html = document.documentElement;
+            const toggleBtn = document.getElementById('themeToggleIcon');
+
+            if (saved === 'dark' || (!saved && prefersDark)) {
+                html.setAttribute('data-theme', 'dark');
+                toggleBtn.innerHTML = moonIcon;
+            } else {
+                toggleBtn.innerHTML = sunIcon;
+            }
+        };
+    </script>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="themeToggleIcon"></span>
+    </button>
+
+    <h2>📘 Exam Question Paper Analyzer</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload Sample Question Paper:</label>
+        <input type="file" name="sample_file" accept=".pdf,.docx,.txt" required>
+
+        <label>Upload Previous Year Question Paper:</label>
+        <input type="file" name="prev_file" accept=".pdf,.docx,.txt" >
+
+        <label>Upload Syllabus File:</label>
+        <input type="file" name="syllabus_file" accept=".pdf,.docx,.txt" required>
+
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+    <div class="result-container">
+        <h3>📊 Analysis Result (Preview):</h3>
+        {{ result | safe }}
+        <div class="download-form">
+            <form method="POST" action="/download">
+                <button type="submit">⬇ Download Full Report (.docx)</button>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+</body>
+</html>
